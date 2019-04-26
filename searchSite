@@ -1,0 +1,25 @@
+public static String searchSite() {
+		
+		boolean ignoreCase; 
+		String search1 = new String();
+	
+		Scanner input1 = new Scanner(System.in);
+		System.out.println("Search: ");
+		search1 = input1.next();
+	
+		if(search1.regionMatches(true, 0, "Tv", 0, 2)) {
+			return ("Tv");
+		}
+		else if(search1.regionMatches(true, 0, "IPad", 0, 3)) {
+			return ("IPad");
+		}
+		else if(search1.regionMatches(true, 0, "Shirt", 0, 5)) {
+			return ("Shirt");
+		}
+		else if(search1.regionMatches(true, 0, "Backpack", 0, 8)) {
+			return ("Backpack");
+		}
+		else {
+			return ("Product name is not found");
+		}
+}
